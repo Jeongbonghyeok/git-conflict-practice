@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include <stdlib.h>
-
+#include <math.h>
 
 void performCalculation(int x, int y);
 void handleUserInput();
@@ -12,8 +12,7 @@ int main() {
 }
 
 void performCalculation(int x, int y) {
-    printf("Calculating result for %d and %d...\n", x, y);
-    int result = x + y;
+     printf("Calculating %d to the power of %d...\n", x, y); int result = pow(x, y);
     displayResult(result);
 }
 void handleUserInput() {
